@@ -18,18 +18,36 @@
 
   <body>
     <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-      <label for="navi-toggle" class="navigation__button"><span class="navigation__icon">&nbsp;</span></label>
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button"
+        ><span class="navigation__icon">&nbsp;</span></label
+      >
 
       <div class="navigation__background">&nbsp;</div>
 
       <nav class="navigation__nav">
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>01 </span> About Natours</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span> Your Benefits</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span> Popular Tours</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span> Stories</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span> Book Now</a></li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>01 </span> About Natours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>02</span> Your Benefits</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"
+              ><span>03</span> Popular Tours</a
+            >
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>04</span> Stories</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link"><span>05</span> Book Now</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -152,7 +170,7 @@
         </div>
       </section>
 
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most popular tours</h2>
         </div>
@@ -183,7 +201,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$297</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book Now!</a>
+                  <a href="#popup" class="btn btn--white">Book Now!</a>
                 </div>
               </div>
             </div>
@@ -213,13 +231,13 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$497</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book Now!</a>
+                  <a href="#popup" class="btn btn--white">Book Now!</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-1-of-3">
-            <div class="card">
+            <div class="card" id="tour-card">
               <div class="card__side card__side--front">
                 <div class="card__picture card__picture--3">&nbsp;</div>
                 <h4 class="card__heading">
@@ -243,7 +261,7 @@
                     <p class="card__price-only">Only</p>
                     <p class="card__price-value">$897</p>
                   </div>
-                  <a href="#" class="btn btn--white">Book Now!</a>
+                  <a href="#popup" class="btn btn--white">Book Now!</a>
                 </div>
               </div>
             </div>
@@ -251,6 +269,34 @@
         </div>
         <div class="u-center-text u-margin-top-huge">
           <a href="#" class="btn btn--green">Discover All Tours</a>
+        </div>
+        <div class="popup" id="popup">
+          <div class="popup__content">
+            <div class="popup__left">
+              <img src="img/nat-8.jpg" alt="Popup Image" class="popup__image" />
+              <img src="img/nat-9.jpg" alt="Popup Image" class="popup__image" />
+            </div>
+            <div class="popup__right">
+              <a href="#tour-card" class="popup__close">&times;</a>
+              <h2 class="heading-secondary u-margin-bottom-small">
+                Start Booking Now
+              </h2>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Important &ndash; Please read these terms before booking!
+              </h3>
+              <p class="popup__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Inventore numquam incidunt fugit earum tempore distinctio quia
+                cum? Corrupti vero quasi rerum accusamus, cumque aliquid aut
+                repudiandae tempore tempora accusantium. Quam. Lorem ipsum,
+                dolor sit amet consectetur adipisicing elit. Iusto eveniet fuga
+                quia, laudantiusadm aliquid voluptatibus ea quis voluptas
+                repellendus, voluptatem esse sit perferendis placeat cumque
+                obcaecati unde. Velit, recusandae laboriosam?
+              </p>
+              <a href="#" class="btn btn--green">Book Now</a>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section-stories">
@@ -384,23 +430,39 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__logo-box">
-            <img src="img/logo-green-2x.png" alt="Logo" class="footer__logo">
+      <div class="footer__logo-box">
+        <img src="img/logo-green-2x.png" alt="Logo" class="footer__logo" />
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Company</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact Us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Careers</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy Policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms</a>
+              </li>
+            </ul>
           </div>
-              <div class="row">
-                  <div class="col-1-of-2">
-                      <div class="footer__navigation">
-                          <ul class="footer__list">
-                              <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
-                              <li class="footer__item"><a href="#" class="footer__link">Contact Us</a></li>
-                              <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
-                              <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
-                              <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="col-1-of-2"><p class="footer__copyright">Built by <a href="#" class="footer__link">Kwadwo Asubonteng</a> as his <a href="#" class="footer__link">project</a>. Copyright &copy; Kwadwo Asubonteng. Originally Designed by Jonas Schmedtmann</p></div>
-              </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Built by <a href="#" class="footer__link">Kwadwo Asubonteng</a> as
+            his <a href="#" class="footer__link">project</a>. Copyright &copy;
+            Kwadwo Asubonteng. Originally Designed by Jonas Schmedtmann
+          </p>
+        </div>
+      </div>
     </footer>
 
     <!-- <section class="grid-test">
